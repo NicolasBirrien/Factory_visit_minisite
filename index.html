@@ -88,22 +88,22 @@
     .video-section {
       text-align: center;
     }    
-      
+
     .video-container {
       position: relative;
       padding-bottom: 56.25%; /* keeps 16:9 aspect ratio */
       height: 0;
       overflow: hidden;
-      max-width: 800px;
-      width: 100%;
-      margin: 0 auto;
+      max-width: 800px;   /* bigger on desktops */
+      width: 100%;        /* responsive on smaller screens */
+      margin: 0 auto;     /* centers horizontally */
     }
     
     .video-container iframe {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100%;  /* iframe fills the container */
       height: 100%;
     }
       
