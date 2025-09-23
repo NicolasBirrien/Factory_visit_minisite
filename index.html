@@ -11,7 +11,6 @@
       margin: 0;
       padding: 0;
       color: #7F7F7F;
-      text-align: center;
     }
     /* Top strip with logo */
     .top-bar {
@@ -27,9 +26,8 @@
     }
     /* Banner */
     .banner {
-      position: relative;
       width: 100%;
-      height: 70vh;
+      height: 50vh; /* increase height here */
       overflow: hidden;
     }
     .banner img {
@@ -37,30 +35,28 @@
       height: 100%;
       object-fit: cover;
     }
-    .banner h1 {
-      position: absolute;
-      bottom: 20px;
-      left: 5%;
-      transform: translateX(-50%);
-      color: #0064AE;
-      font-size: 2.5em;
-      background: rgba(255, 255, 255, 0.7);
-      padding: 10px 20px;
-      border-radius: 6px;
+    /* Title and subtitle */
+    .page-header {
+      padding: 30px 40px 20px;
+      text-align: left;
     }
-    /* Subtitle */
-    h2 {
+    .page-header h1 {
       color: #0064AE;
-      margin: 30px auto;
+      font-size: 2.8em;
+      margin: 0 0 10px;
+    }
+    .page-header h2 {
+      color: #7F7F7F;
+      font-size: 1.4em;
+      margin: 0;
     }
     /* Document buttons */
     .doc-links {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       gap: 20px;
-      margin: 20px auto 60px;
-      max-width: 900px;
+      margin: 30px 40px 60px;
     }
     .doc-links a {
       flex: 1 1 250px;
@@ -80,9 +76,10 @@
       border-color: #0064AE;
     }
     footer {
-      margin: 20px 0;
+      margin: 20px 40px;
       font-size: 0.8em;
       color: #7F7F7F;
+      text-align: left;
     }
   </style>
 </head>
@@ -92,14 +89,16 @@
     <img src="logo.jpg" alt="Company Logo">
   </div>
 
-  <!-- Banner with title overlay -->
+  <!-- Banner -->
   <div class="banner">
     <img src="banner.png" alt="Banner">
-    <h1>Bourdon factory</h1>
   </div>
 
-  <!-- Subtitle -->
-  <h2>Learning more about the people and skills behind our industry</h2>
+  <!-- Title + subtitle -->
+  <div class="page-header">
+    <h1>Baumer Bourdon Company</h1>
+    <h2>A closer look at the professions and know-how you encountered</h2>
+  </div>
 
   <!-- Documents section -->
   <div class="doc-links">
@@ -110,7 +109,7 @@
 
   <!-- Footer -->
   <footer>
-    © 2025 Bourdon Nicolas Birrien — Hosted on GitHub Pages
+    © 2025 Nicolas Birrien Bourdon — Hosted on GitHub Pages
   </footer>
 </body>
 </html>
