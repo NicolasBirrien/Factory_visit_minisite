@@ -1,0 +1,36 @@
+
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  max-width: 100%;   /* responsive */
+  height: auto;
+  display: block;
+}
+
+.hotspot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #0062AE;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+<div class="map-container">
+  <img src="Plan simple BIN.png" alt="Factory Map">
+
+  <!-- Example hotspot -->
+  <a href="job1.html" class="hotspot" style="top: 30%; left: 40%;">1</a>
+  <a href="job2.html" class="hotspot" style="top: 60%; left: 20%;">2</a>
+  <!-- … repeat for 20 points -->
+</div>
