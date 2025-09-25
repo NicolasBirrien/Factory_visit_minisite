@@ -16,14 +16,15 @@
     /* Top strip with logo */
     .top-bar {
       background: #FFFFFF;
-      height: 80px;
+      height: 100px;
       display: flex;
+      justify-content: space-between; /* pushes logos to left + right */
       align-items: center;
-      justify-content: flex-start;
       padding: 0 20px;
     }
+    
     .top-bar img {
-      height: 60px;
+      height: 80px;
     }
 
     
@@ -162,7 +163,12 @@
 <body>
   <!-- Top bar with logo -->
   <div class="top-bar">
-    <img src="logo.jpg" alt="Company Logo">
+    <a href="https://www.bourdon-instruments.com/fr/en/" target="_blank">
+      <img src="logo.jpg" alt="Bourdon Logo">
+    </a>
+    <a href="https://www.baumer.com/ch/en" target="_blank">
+      <img src="baumer_logo.jpg" alt="Baumer Logo">
+    </a>
   </div>
 
   <div class="carousel">
